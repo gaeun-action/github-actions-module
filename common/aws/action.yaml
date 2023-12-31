@@ -12,7 +12,7 @@ inputs:
     default: 'github actions'
 
 runs:
-  using: "conpostie"
+  using: "conposite"
   steps:
   - name: Configure AWS Credentials
     id: credentials
