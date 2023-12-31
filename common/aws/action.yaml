@@ -1,0 +1,22 @@
+name: aws
+author: rlarkdms
+description: 'Use aws step in github action'
+inputs:
+  AWS_REGION:
+    description: 'set aws region'
+    required: true
+    default: 'ap-northeast-2'
+  AWS_ROLE_TO_ASSUME:
+    description: 'set aws role'
+    required: true
+    default: 'github actions'
+
+runs:
+  using: "conpostie"
+  steps:
+    - name: Configure AWS Credentials
+    id: credentials
+    uses: aws-actions/configure-aws-credentials@v4
+    with:
+      aws-region: ${{ inputs.AWS_REGION }}
+      role-to-assume: ${{ inputs.AWS_ROLE_TO_ASSUME }}
