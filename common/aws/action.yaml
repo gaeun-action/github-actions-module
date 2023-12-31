@@ -14,7 +14,7 @@ inputs:
 runs:
   using: "conpostie"
   steps:
-    - name: Configure AWS Credentials
+  - name: Configure AWS Credentials
     id: credentials
     uses: aws-actions/configure-aws-credentials@v4
     with:

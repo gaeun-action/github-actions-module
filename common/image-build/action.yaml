@@ -13,7 +13,7 @@ inputs:
   DOCKERFILE_FATH:
     description: 'SET dockerfile path'
     required: false
-    default: 'Dockerfile'
+    default: 'dockerfile'
 
 runs:
   using: "composite"
