@@ -19,4 +19,4 @@ runs:
     uses: aws-actions/configure-aws-credentials@v4
     with:
       aws-region: ${{ inputs.AWS_REGION }}
-      AWS_ROLE_TO_ASSUME: ${{ inputs.AWS_ROLE_TO_ASSUME }}
+      role-to-assume: ${{ inputs.AWS_ROLE_TO_ASSUME }}
